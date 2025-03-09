@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:
+  node:
+    build:
+      context: .
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: 2048m
