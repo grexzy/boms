@@ -2,8 +2,7 @@ version: "3.4"
 
 services:
   node:
-    build:
-      context: .
+    image: ghcr.io/grexzy/boms:latest
     logging:
       driver: "json-file"
       options:
